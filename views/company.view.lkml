@@ -19,9 +19,9 @@ view: company {
     type: string
     sql: ${TABLE}."city" ;;
   }
-  dimension: company {
+  dimension: name {
     type: string
-    sql: ${TABLE}."company" ;;
+    sql: ${TABLE}."name" ;;
   }
   dimension: growth {
     type: number

@@ -1,4 +1,4 @@
-connection: "test_postgres_data"
+connection: "postgres_company_data"
 
 include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
 # include: "/**/*.view.lkml"                 # include all views in this project
@@ -29,7 +29,7 @@ explore: company_revenue_10million {
 
   query: revenue>10M{
     description: "Software companies with revenue > 10M"
-    dimensions: [state_s, industry, company, revenue]
+    dimensions: [state_s, industry, name, revenue]
     measures: []
     filters: [industry_filter: "Software"]
   }
