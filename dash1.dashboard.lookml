@@ -1,4 +1,3 @@
----
 - dashboard: dash1
   title: dash1
   layout: newspaper
